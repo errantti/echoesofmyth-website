@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="styles.css" rel="stylesheet">
+<title>Echoes of Myth</title>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="https://shiftingrealityinteractive.com" target="_blank" class="dev-link">
+                <img src="imgs/Logo_ShiftingRealityInteractive_TransparentBG_mid.png" alt="Shifting Reality Interactive" class="dev-logo">
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <img src="./imgs/EoMCapsule.jpg" alt="Echoes of Myth" />
+            <p class="tagline">The world has broken and the gods have fallen silent.</p>
+            <div class="cta-top">
+                <a href="https://store.steampowered.com/app/XXXXXXX" target="_blank" class="wishlist-btn">Wishlist now on Steam</a>
+            </div>
+        </section>
+
+        <section class="trailer-section">
+            <h2>Trailer</h2>
+            <div class="trailer-wrapper">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/dCdMge4s144?si=I7_FdUmMY-5AoXRO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section class="description">
+            <h2>About</h2>
+            <p>An upcoming roguelite soulslike set in a broken, ever-changing fantasy world where gods have fallen silent. Choose your class, tactically battle enemies and bosses, collect unique loot, unlock talents, and permanently enhance your character. Die, learn, and rise stronger.</p>
+			<p>Release target Q3 2025 - to be available on Steam for Windows.</p>
+        </section>
+
+        <section class="screenshots">
+            <h2>Screenshots</h2>
+            <div class="gallery">
+    <img src="imgs/screenshots/thumbs/screen1.jpg" alt="Screenshot 1" data-full-img="imgs/screenshots/screen1.jpg">
+    <img src="imgs/screenshots/thumbs/screen2.jpg" alt="Screenshot 2" data-full-img="imgs/screenshots/screen2.jpg">
+    <img src="imgs/screenshots/thumbs/screen3.jpg" alt="Screenshot 3" data-full-img="imgs/screenshots/screen3.jpg">
+    <img src="imgs/screenshots/thumbs/screen4.jpg" alt="Screenshot 4" data-full-img="imgs/screenshots/screen4.jpg">
+    <img src="imgs/screenshots/thumbs/screen5.jpg" alt="Screenshot 5" data-full-img="imgs/screenshots/screen5.jpg">
+    <img src="imgs/screenshots/thumbs/screen6.jpg" alt="Screenshot 6" data-full-img="imgs/screenshots/screen6.jpg">
+    <img src="imgs/screenshots/thumbs/screen7.jpg" alt="Screenshot 7" data-full-img="imgs/screenshots/screen7.jpg">
+    <img src="imgs/screenshots/thumbs/screen8.jpg" alt="Screenshot 8" data-full-img="imgs/screenshots/screen8.jpg">
+    <img src="imgs/screenshots/thumbs/screen9.jpg" alt="Screenshot 9" data-full-img="imgs/screenshots/screen9.jpg">
+    <img src="imgs/screenshots/thumbs/screen10.jpg" alt="Screenshot 10" data-full-img="imgs/screenshots/screen10.jpg">
+    <img src="imgs/screenshots/thumbs/screen11.jpg" alt="Screenshot 11" data-full-img="imgs/screenshots/screen11.jpg">
+    <img src="imgs/screenshots/thumbs/screen12.jpg" alt="Screenshot 12" data-full-img="imgs/screenshots/screen12.jpg">
+    <img src="imgs/screenshots/thumbs/screen13.jpg" alt="Screenshot 13" data-full-img="imgs/screenshots/screen13.jpg">
+    <img src="imgs/screenshots/thumbs/screen14.jpg" alt="Screenshot 14" data-full-img="imgs/screenshots/screen14.jpg">
+    <img src="imgs/screenshots/thumbs/screen15.jpg" alt="Screenshot 15" data-full-img="imgs/screenshots/screen15.jpg">
+</div>
+
+        </section>
+
+        <section class="features">
+            <h2>Soulslike Combat</h2>
+            <p>Engage in challenging combat against formidable enemies and bosses. Utilize a mix of melee attacks and spells, relying on well-timed dodges and parries to survive. Choose from different classes, each offering a unique weapon, spells, and talents that fit your playstyle.</p>
+        </section>
+
+        <section class="features">
+            <h2>Explore a Fragmented Fantasy World</h2>
+            <p>Navigate through a broken, ever-changing realm where gods have fallen silent. Chart your own course through multiple routes filled with secrets and mysteries to uncover. Each path offers new challenges and discoveries in this dynamic world.</p>
+        </section>
+
+        <section class="features">
+            <h2>Permanent Progression and Customization</h2>
+            <p>Collect different mythic essences to unlock permanent upgrades that enhance your character across all iterations. Hunt for powerful items and the perfect Eternalized Legacy to customize your abilities. Grow stronger with each attempt, as your progression persists beyond death.</p>
+        </section>
+
+        <section class="features">
+            <h2>Key Features</h2>
+            <ul>
+                <li>Soulslike Combat: Battle enemies and bosses using a mix of melee attacks and spells, with well-timed dodges and parries crucial for survival.</li>
+                <li>Class Selection: Choose from different classes, each offering unique weapon, spells and talents to suit your playstyle.</li>
+                <li>Permanent Progression: Collect mythic essence to unlock permanent upgrades and hunt for the perfect Eternalized Legacy.</li>
+				<li>Dynamic Paths: Chart your own course through the world with multiple routes and secrets.</li>
+				<li>Unique Loot: Gather powerful items to customize and enhance your character.</li>
+				<li>Prophecies: Unlock prophecies that affect future iterations and shape your journey.</li>
+				<li>Mysteries to Uncover: Discover the mysteries behind the broken and fragmented world.</li>
+            </ul>
+        </section>
+
+        <div class="cta-bottom">
+            <a href="https://store.steampowered.com/app/XXXXXXX" target="_blank" class="wishlist-btn">Wishlist now on Steam</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Echoes of Myth</p>
+    </footer>
+
+    <!-- Modal for enlarged screenshot -->
+    <div class="modal" id="modal">
+        <span class="modal-close" id="modal-close">&times;</span>
+        <img class="modal-content" id="modal-img" src="" alt="Enlarged Screenshot">
+    </div>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+
+const modal = document.getElementById('modal');
+const modalImg = document.getElementById('modal-img');
+const modalClose = document.getElementById('modal-close');
+const galleryImages = document.querySelectorAll('.gallery img');
+
+galleryImages.forEach(img => {
+    img.addEventListener('click', () => {
+        modal.style.display = 'flex';
+        modalImg.src = img.getAttribute('data-full-img');
+    });
+});
+
+modalClose.addEventListener('click', () => {
+    modal.style.display = 'none';
+});
+
+modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+        modal.style.display = 'none';
+    }
+});
+
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+        modal.style.display = 'none';
+    }
+});
+</script>
+
+</body>
+</html>
